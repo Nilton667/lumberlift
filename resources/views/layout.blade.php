@@ -7,14 +7,15 @@
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/app.css?v=1') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/line-1.3.0/css/line-awesome.min.css') }}"/>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <div class="preload">
         <div class="w-100">
             <center>
-                <img src="{{ asset('img/logo.png') }}">
+                <img width="180" src="{{ asset('favicon.png') }}">
             </center>
         </div>
     </div>
@@ -22,7 +23,7 @@
     <div class="onload">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Lumberlift</a>
+                <a class="navbar-brand" href="/"><img width="100" src="{{ asset('favicon.png') }}" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,41 +41,104 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">ASNT NDT</a></li>
-                            <li><a class="dropdown-item" href="#">ENSAIO DE CARGA</a></li>
-                            <li><a class="dropdown-item" href="#">GESTÃO DE LOFT RIGG</a></li>
-                            <li><a class="dropdown-item" href="#">RETERMINAÇÃO DE SOQUETE</a></li>
-                            <li><a class="dropdown-item" href="#">EXAME VISUAL</a></li>
-                            <li><a class="dropdown-item" href="#">INSPEÇÃO DE CONTÊINER OFFSHORE</a></li>
-                            <li><a class="dropdown-item" href="#">SI 2306 EXAME</a></li>
-                            <li><a class="dropdown-item" href="#">SI 2307 EXAME</a></li>
-                            <li><a class="dropdown-item" href="#">CCUs MANUTENÇÃO COMPLETA</a></li>
+                            <li><a class="dropdown-item" href="#">Ensaio De Carga</a></li>
+                            <li><a class="dropdown-item" href="#">Gestão De LOFT RIGG</a></li>
+                            <li><a class="dropdown-item" href="#">Reterminação De Soquete</a></li>
+                            <li><a class="dropdown-item" href="#">Exame Visual</a></li>
+                            <li><a class="dropdown-item" href="#">Inspeção De Conteiner OFFSHORE</a></li>
+                            <li><a class="dropdown-item" href="#">SI 2306 Exame</a></li>
+                            <li><a class="dropdown-item" href="#">SI 2307 Exame</a></li>
+                            <li><a class="dropdown-item" href="#">CCUs Manutenção Completa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
                 </div>
             </div>
         </nav>
         @yield('content')
-        <footer class="p-4">
-            <div class="row">
-                <div class="col-12 col-md-3">
-
+        <footer>
+            <div class="p-4 container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <br>
+                        <img width="180" src="{{ asset('favicon.png') }}">
+                        <p class="small" style="text-align: justify;">
+                            Lifting	Services Somos uma empresa de prestação de serviços, com actividades voltadas Industria de equipamentos de elevação, nominadamente na Industria de Oleo e Gas, de direito e capitais 100% angolanos, com o NIF 5001340905, fundada em 2022 na cidade de Luanda, Capital de Angola.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <br>
+                        <h5>Contacto</h5>
+                        <hr>
+                        <p>
+                            Luanda, Angola
+                            <br>
+                            Av. Fidel De Castro
+                            <br>
+                            Travessa Do Casino Boali
+                            <br>
+                            Distrito Urbano De Cabolombo
+                        </p>
+                        <p>
+                            <a href="mailto:geral@lumberlifut.co.ao">
+                                <i class="las la-envelope"></i> geral@lumberlifut.co.ao
+                            </a>
+                            <a href="mailto:info@lumberlifut.co.ao">
+                                <i class="las la-envelope"></i> info@lumberlifut.co.ao
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+244958727780">
+                                <i class="las la-phone"></i> (+244) 958 727 780
+                            </a>
+                            <a href="tel:+244958727780">
+                                <i class="lab la-whatsapp"></i> (+244) 958 727 780
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <br>
+                        <h5>Serviços</h5>
+                        <hr>
+                        <a href="javascript:void(0)">ASNT NDT</a>
+                        <a href="javascript:void(0)">Ensaio De Carga</a>
+                        <a href="javascript:void(0)">Gestão De LOFT RIGG</a>
+                        <a href="javascript:void(0)">Reterminação De Soquete</a>
+                        <br>
+                        <h5>Outros Serviços</h5>
+                        <a onclick="indisponivel()" href="javascript:void(0)">Exame Visual</a>
+                        <a onclick="indisponivel()" href="javascript:void(0)">Inspeção De Conteiner</a>
+                        <a onclick="indisponivel()" href="javascript:void(0)">SI 2306 Exame</a>
+                        <a onclick="indisponivel()" href="javascript:void(0)">SI 2307 Exame</a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <br>
+                        <h5>Empresa</h5>
+                        <hr>
+                        <a href="/sobre">Sobre</a>
+                        <a onclick="#" href="javascript:void(0)">Parceiros</a>
+                        <a href="#">Portifólio</a>
+                        <a href="#">Termos de serviços &amp; privacidade</a>
+                        <br>
+                        <h5>NEWSLETTER</h5>
+                        <p>Inscreva-se na nossa newsletter e receba todas as novidades em primeira mão!</p>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="newsletter-email" aria-describedby="emailHelp" placeholder="Seu email">
+                        </div>
+                        <button id="newsletter-add" class="btn btn-primary">Subscrever</button>
+                    </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <h5>Contactos</h5>
-                    <hr>
-                    <i data-lucide="menu"></i>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h5>Informação</h5>
-                    <hr>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h5>Links Úteis</h5>
-                    <hr>
+            </div>
+            <div class="copyColor">
+                <div class="container">
+                    <div class="row m-0">
+                        <div class="col-12">
+                            <p class="m-0 text-light p-3 text-center">©{{ date('Y') }} Lumberlift Lda, Todos os direitos reservados.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
