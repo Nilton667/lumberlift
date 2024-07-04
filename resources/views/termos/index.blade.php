@@ -3,12 +3,23 @@
 @section('title', 'Termos')
 
 @section('content')
+<div class="header-container-wallpaper d-flex align-items-center"
+style="background: url({{ asset('img/termos.jpg') }}); background-position: left;">
+    <div style="z-index: 0; position: absolute; top: 0; bottom: 0; width: 100%; background: rgba(0, 0, 0, .6);"></div>
+    <div style="z-index: 1; display: relative;" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 style="color: #fff; text-shadow: 4px 4px 6px rgba(0, 0, 0, .6);" class="display-5">
+                    Termos de serviços & privacidade
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
 <div class="container">
     <div>
         <div class="row">
-            <div class="col-6 pt-2">
-                <h4><b>Termos de serviços & privacidade</b></h4>
-            </div>
 			<div class="col-12">
 
                 <p><b><strong>Julho</strong>/<strong>2024</strong></b></p>

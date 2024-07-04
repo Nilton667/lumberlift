@@ -89,11 +89,11 @@
                             Distrito Urbano De Cabolombo
                         </p>
                         <p>
-                            <a href="mailto:geral@lumberlifut.co.ao">
-                                <i class="las la-envelope"></i> geral@lumberlifut.co.ao
+                            <a href="mailto:geral@lumberlift.co.ao">
+                                <i class="las la-envelope"></i> geral@lumberlift.co.ao
                             </a>
-                            <a href="mailto:info@lumberlifut.co.ao">
-                                <i class="las la-envelope"></i> info@lumberlifut.co.ao
+                            <a href="mailto:info@lumberlift.co.ao">
+                                <i class="las la-envelope"></i> info@lumberlift.co.ao
                             </a>
                         </p>
                         <p>
