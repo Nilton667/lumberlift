@@ -12,25 +12,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         with(document.querySelector('body')){
             style.overflow      = 'auto';
-        }        
+        }
     }, 1000);
-  
+
   });
-  
+
   //Carregamento
   if(document.querySelector('.preload')){
     function load() {
-        if($('.preload').hasClass('load') == false){
-            $('.preload').addClass('load');
+        if(!document.querySelector('.preload').classList.contains('load')){
+            document.querySelector('.preload').classList.add('load')
         }
     }
     function onload() {
-        if($('.preload').hasClass('load')){
-            $('.preload').removeClass('load');
+        if(document.querySelector('.preload').classList.contains('load')){
+            document.querySelector('.preload').classList.remove('load')
         }
     }
   }
-  
+
   function setCookie(name,value,days) {
     var expires = "";
     if (days) {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
   }
-  
+
   function getCookie(name) {
     let cookieName = undefined
     document.cookie.split(';').forEach(function(element) {

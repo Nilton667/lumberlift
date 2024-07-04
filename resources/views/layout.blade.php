@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/app.css?v=2') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/app.css?v=3') }}"/>
     <link rel="stylesheet" href="{{ asset('css/line-1.3.0/css/line-awesome.min.css') }}"/>
 </head>
 <body>
@@ -20,7 +20,7 @@
     </div>
 
     <div class="onload">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img width="100" src="{{ asset('favicon.png') }}" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +29,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link {{ request()->is('home', 'sobre', 'servicos', 'contacto', 'parceiros', 'termos') ? '' : 'active' }}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/sobre">Sobre Nós</a>
+                        <a class="nav-link {{ request()->is('sobre') ? 'active' : '' }}" href="/sobre">Sobre Nós</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void('servicos')" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link {{ request()->is('servicos') ? 'active' : '' }} dropdown-toggle" href="javascript:void('servicos')" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Serviços
                         </a>
                         <ul class="dropdown-menu">
@@ -51,7 +51,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contacto">Contacto</a>
+                        <a class="nav-link {{ request()->is('parceiros') ? 'active' : '' }}" href="/parceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('termos') ? 'active' : '' }}" href="/termos">Termos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('contacto') ? 'active' : '' }}" href="/contacto">Contacto</a>
                     </li>
                 </ul>
                 </div>
@@ -118,10 +124,10 @@
                         <br>
                         <h5>Empresa</h5>
                         <hr>
-                        <a href="/sobre">Sobre</a>
-                        <a href="/parceiros">Parceiros</a>
-                        <a href="#">Portifólio</a>
-                        <a href="/termos">Termos de serviços &amp; privacidade</a>
+                        <a class="{{ request()->is('sobre') ? 'active' : '' }}" href="/sobre">Sobre</a>
+                        <a class="{{ request()->is('parceiros') ? 'active' : '' }}" href="/parceiros">Parceiros</a>
+                        <a href="{{ asset('doc/lumberlift.pdf') }}" target="_blank">Portifólio</a>
+                        <a class="{{ request()->is('termos') ? 'active' : '' }}" href="/termos">Termos de serviços &amp; privacidade</a>
                         <br>
                         <h5>NEWSLETTER</h5>
                         <p>Inscreva-se na nossa newsletter e receba todas as novidades em primeira mão!</p>
@@ -145,6 +151,6 @@
     </div>
 
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{asset('js/app.js?v=3')}}"></script>
 </body>
 </html>
