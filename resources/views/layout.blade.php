@@ -7,9 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/app.css?v=1') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/app.css?v=2') }}"/>
     <link rel="stylesheet" href="{{ asset('css/line-1.3.0/css/line-awesome.min.css') }}"/>
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <div class="preload">
@@ -30,29 +29,29 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nós</a>
+                        <a class="nav-link" href="/sobre">Sobre Nós</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void('servicos')" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Serviços
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">ASNT NDT</a></li>
-                            <li><a class="dropdown-item" href="#">Ensaio De Carga</a></li>
-                            <li><a class="dropdown-item" href="#">Gestão De LOFT RIGG</a></li>
-                            <li><a class="dropdown-item" href="#">Reterminação De Soquete</a></li>
-                            <li><a class="dropdown-item" href="#">Exame Visual</a></li>
-                            <li><a class="dropdown-item" href="#">Inspeção De Conteiner OFFSHORE</a></li>
-                            <li><a class="dropdown-item" href="#">SI 2306 Exame</a></li>
-                            <li><a class="dropdown-item" href="#">SI 2307 Exame</a></li>
-                            <li><a class="dropdown-item" href="#">CCUs Manutenção Completa</a></li>
+                            <li><a class="dropdown-item" href="/servicos">ASNT NDT</a></li>
+                            <li><a class="dropdown-item" href="/servicos">Ensaio De Carga</a></li>
+                            <li><a class="dropdown-item" href="/servicos">Gestão De LOFT RIGG</a></li>
+                            <li><a class="dropdown-item" href="/servicos">Reterminação De Soquete</a></li>
+                            <li><a class="dropdown-item" href="/servicos">Exame Visual</a></li>
+                            <li><a class="dropdown-item" href="/servicos">Inspeção De Conteiner OFFSHORE</a></li>
+                            <li><a class="dropdown-item" href="/servicos">SI 2306 Exame</a></li>
+                            <li><a class="dropdown-item" href="/servicos">SI 2307 Exame</a></li>
+                            <li><a class="dropdown-item" href="/servicos">CCUs Manutenção Completa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="/contacto">Contacto</a>
                     </li>
                 </ul>
                 </div>
@@ -65,6 +64,7 @@
                     <div class="col-12 col-md-3">
                         <br>
                         <img width="180" src="{{ asset('favicon.png') }}">
+                        <br><br>
                         <p class="small" style="text-align: justify;">
                             Lifting	Services Somos uma empresa de prestação de serviços, com actividades voltadas Industria de equipamentos de elevação, nominadamente na Industria de Oleo e Gas, de direito e capitais 100% angolanos, com o NIF 5001340905, fundada em 2022 na cidade de Luanda, Capital de Angola.
                         </p>
@@ -103,25 +103,25 @@
                         <br>
                         <h5>Serviços</h5>
                         <hr>
-                        <a href="javascript:void(0)">ASNT NDT</a>
-                        <a href="javascript:void(0)">Ensaio De Carga</a>
-                        <a href="javascript:void(0)">Gestão De LOFT RIGG</a>
-                        <a href="javascript:void(0)">Reterminação De Soquete</a>
+                        <a href="/servicos">ASNT NDT</a>
+                        <a href="/servicos">Ensaio De Carga</a>
+                        <a href="/servicos">Gestão De LOFT RIGG</a>
+                        <a href="/servicos">Reterminação De Soquete</a>
                         <br>
                         <h5>Outros Serviços</h5>
-                        <a onclick="indisponivel()" href="javascript:void(0)">Exame Visual</a>
-                        <a onclick="indisponivel()" href="javascript:void(0)">Inspeção De Conteiner</a>
-                        <a onclick="indisponivel()" href="javascript:void(0)">SI 2306 Exame</a>
-                        <a onclick="indisponivel()" href="javascript:void(0)">SI 2307 Exame</a>
+                        <a href="/servicos">Exame Visual</a>
+                        <a href="/servicos">Inspeção De Conteiner</a>
+                        <a href="/servicos">SI 2306 Exame</a>
+                        <a href="/servicos">SI 2307 Exame</a>
                     </div>
                     <div class="col-12 col-md-3">
                         <br>
                         <h5>Empresa</h5>
                         <hr>
                         <a href="/sobre">Sobre</a>
-                        <a onclick="#" href="javascript:void(0)">Parceiros</a>
+                        <a href="/parceiros">Parceiros</a>
                         <a href="#">Portifólio</a>
-                        <a href="#">Termos de serviços &amp; privacidade</a>
+                        <a href="/termos">Termos de serviços &amp; privacidade</a>
                         <br>
                         <h5>NEWSLETTER</h5>
                         <p>Inscreva-se na nossa newsletter e receba todas as novidades em primeira mão!</p>

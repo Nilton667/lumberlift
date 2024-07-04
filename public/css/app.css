@@ -8,6 +8,10 @@
     nav li a{
         font-weight: bold!important;
     }
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+    }
     .preload{
 		position: fixed;
 		width: 100%;
@@ -55,7 +59,6 @@
     .navbar .nav-item{
         display: flex;
         align-items: center;
-        justify-content: center;
     }
     a.nav-link {
         display: flex;
@@ -67,23 +70,9 @@
         color: #fff !important;
         background: #00134F !important;
     }
-    .page-link {
-        border: 0.5px #ebe9ee solid;
-        border-radius: 8px!important;
-    }
-    .page-link:hover {
-        border-radius: 8px!important;
-        background: #0054A6;
-        color: #fff;
-    }
     .btn-close:focus{
         outline: none!important;
         box-shadow: none!important;
-    }
-    .page-link.active {
-        border-radius: 8px !important;
-        background: #0054A6;
-        color: #fff;
     }
     .btn-primary {
         background: #0054A6;
@@ -104,10 +93,6 @@
     a{
         text-decoration: none;
     }
-    .navbar-toggler{
-        outline: none;
-        border: 0!important;
-    }
     footer{
         background: #222222;
     }
@@ -127,26 +112,5 @@
     }
     .copyColor{
         background: rgba(0, 0, 0, .08);
-    }
-}
-@media screen and (max-width: 991px) {
-    html{
-        font-size: 11pt;
-    }
-    .navbar-brand{
-        max-width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: none;
-    }
-    .navbar-expand-lg .navbar-nav {
-        flex-direction: row;
-    }
-    .nav-item .nav-link{
-        padding: 8px!important;
-    }
-    .mobile-hidden{
-        display: none;
     }
 }
