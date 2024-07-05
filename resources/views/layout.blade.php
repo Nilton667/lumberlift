@@ -10,7 +10,7 @@
     <meta name="keywords" content="Lumberlift, @yield('keywords')"/>
     <meta name="author" content="Global Tecnologia SU, LDA"/>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/app.css?v=3') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/app.css?v=4') }}"/>
     <link rel="stylesheet" href="{{ asset('css/line-1.3.0/css/line-awesome.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('owl/owl.carousel.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('owl/owl.theme.default.css') }}"/>
@@ -159,7 +159,7 @@
     </div>
 
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('js/app.js?v=3')}}"></script>
+    <script src="{{asset('js/app.js?v=4')}}"></script>
     <script>
         function add() {}
     </script>
