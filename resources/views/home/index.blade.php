@@ -27,7 +27,7 @@
 <div class="container">
     <div id="sobre" class="row">
         <blockquote>
-            <h2>Sobre</h2>
+            <h2>Sobre Nós</h2>
         </blockquote>
         <p class="lead">
             <span class="text-primary"><b>LUMBERLIFT Lifting Services</b></span> Somos uma
