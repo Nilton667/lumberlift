@@ -4,7 +4,10 @@
 
 @section('content')
 <div class="header-container-wallpaper d-flex align-items-center"
-style="background: url({{ asset('img/termos.jpg') }}); background-position: left;">
+style="
+    background: url({{ asset('img/parceiro.jpeg') }});
+    background-position: center;
+    background-repeat: no-repeat;">
     <div style="z-index: 0; position: absolute; top: 0; bottom: 0; width: 100%; background: rgba(0, 0, 0, .6);"></div>
     <div style="z-index: 1; display: relative;" class="container">
         <div class="row">
@@ -16,5 +19,9 @@ style="background: url({{ asset('img/termos.jpg') }}); background-position: left
         </div>
     </div>
 </div>
+<br>
+<center>
+    <p class="lead mt-2">Informação temporariamente indisponível</p>
+</center>
 <br>
 @endsection
