@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/app.css?v=3') }}"/>
     <link rel="stylesheet" href="{{ asset('css/line-1.3.0/css/line-awesome.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('owl/owl.carousel.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('owl/owl.theme.default.css') }}"/>
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ asset('owl/owl.carousel.min.js') }}"></script>
 </head>
 <body>
     <div class="preload">

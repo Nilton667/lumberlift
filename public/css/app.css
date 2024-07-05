@@ -127,6 +127,17 @@
     a{
         text-decoration: none;
     }
+    .paralax {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        padding: 7em 0;
+        position: relative;
+    }
+    .offset-image{
+        background-color: rgba(0, 0, 0, .03);
+    }
     footer{
         background: #222222;
     }
