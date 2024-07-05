@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <title>@yield('title')</title>
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="Lumberlift">
+    <meta name="author" content="Global Tecnologia SU, LDA">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/app.css?v=3') }}"/>
     <link rel="stylesheet" href="{{ asset('css/line-1.3.0/css/line-awesome.min.css') }}"/>
