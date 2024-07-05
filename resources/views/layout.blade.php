@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/app.css?v=3') }}"/>
     <link rel="stylesheet" href="{{ asset('css/line-1.3.0/css/line-awesome.min.css') }}"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="preload">
@@ -35,22 +36,22 @@
                     <a class="nav-link {{ request()->is('home', 'sobre', 'servicos', 'contacto', 'parceiros', 'termos') ? '' : 'active' }}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('sobre') ? 'active' : '' }}" href="/sobre">Sobre Nós</a>
+                        <a class="nav-link {{ request()->is('sobre') ? 'active' : '' }}" href="/#sobre">Sobre Nós</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link {{ request()->is('servicos') ? 'active' : '' }} dropdown-toggle" href="javascript:void('servicos')" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Serviços
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/servicos">ASNT NDT</a></li>
-                            <li><a class="dropdown-item" href="/servicos">Ensaio De Carga</a></li>
-                            <li><a class="dropdown-item" href="/servicos">Gestão De LOFT RIGG</a></li>
-                            <li><a class="dropdown-item" href="/servicos">Reterminação De Soquete</a></li>
-                            <li><a class="dropdown-item" href="/servicos">Exame Visual</a></li>
-                            <li><a class="dropdown-item" href="/servicos">Inspeção De Conteiner OFFSHORE</a></li>
-                            <li><a class="dropdown-item" href="/servicos">SI 2306 Exame</a></li>
-                            <li><a class="dropdown-item" href="/servicos">SI 2307 Exame</a></li>
-                            <li><a class="dropdown-item" href="/servicos">CCUs Manutenção Completa</a></li>
+                            <li><a class="dropdown-item" href="/servicos#asnt">ASNT NDT</a></li>
+                            <li><a class="dropdown-item" href="/servicos#ensaio">Ensaio De Carga</a></li>
+                            <li><a class="dropdown-item" href="/servicos#loft">Gestão De LOFT RIGG</a></li>
+                            <li><a class="dropdown-item" href="/servicos#soquete">Reterminação De Soquete</a></li>
+                            <li><a class="dropdown-item" href="/servicos#visual">Exame Visual</a></li>
+                            <li><a class="dropdown-item" href="/servicos#inspecao">Inspeção De Conteiner OFFSHORE</a></li>
+                            <li><a class="dropdown-item" href="/servicos#si2306">SI 2306 Exame</a></li>
+                            <li><a class="dropdown-item" href="/servicos#si2306">SI 2307 Exame</a></li>
+                            <li><a class="dropdown-item" href="/servicos#ccus">CCUs Manutenção Completa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -112,22 +113,22 @@
                         <br>
                         <h5>Serviços</h5>
                         <hr>
-                        <a href="/servicos">ASNT NDT</a>
-                        <a href="/servicos">Ensaio De Carga</a>
-                        <a href="/servicos">Gestão De LOFT RIGG</a>
-                        <a href="/servicos">Reterminação De Soquete</a>
+                        <a href="/servicos#asnt">ASNT NDT</a>
+                        <a href="/servicos#ensaio">Ensaio De Carga</a>
+                        <a href="/servicos#loft">Gestão De LOFT RIGG</a>
+                        <a href="/servicos#soquete">Reterminação De Soquete</a>
                         <br>
                         <h5>Outros Serviços</h5>
-                        <a href="/servicos">Exame Visual</a>
-                        <a href="/servicos">Inspeção De Conteiner</a>
-                        <a href="/servicos">SI 2306 Exame</a>
-                        <a href="/servicos">SI 2307 Exame</a>
+                        <a href="/servicos#visual">Exame Visual</a>
+                        <a href="/servicos#inspecao">Inspeção De Conteiner</a>
+                        <a href="/servicos#si2306">SI 2306 Exame</a>
+                        <a href="/servicos#si2307">SI 2307 Exame</a>
                     </div>
                     <div class="col-12 col-md-3">
                         <br>
                         <h5>Empresa</h5>
                         <hr>
-                        <a class="{{ request()->is('sobre') ? 'active' : '' }}" href="/sobre">Sobre</a>
+                        <a class="{{ request()->is('sobre') ? 'active' : '' }}" href="/#sobre">Sobre</a>
                         <a class="{{ request()->is('parceiros') ? 'active' : '' }}" href="/parceiros">Parceiros</a>
                         <a href="{{ asset('doc/lumberlift.pdf') }}" target="_blank">Portifólio</a>
                         <a class="{{ request()->is('termos') ? 'active' : '' }}" href="/termos">Termos de serviços &amp; privacidade</a>
@@ -137,7 +138,7 @@
                         <div class="mb-3">
                             <input type="email" class="form-control" id="newsletter-email" aria-describedby="emailHelp" placeholder="Seu email">
                         </div>
-                        <button id="newsletter-add" class="btn btn-primary">Subscrever</button>
+                        <button onclick="add()" id="newsletter-add" class="btn btn-primary">Subscrever</button>
                     </div>
                 </div>
             </div>
@@ -155,5 +156,8 @@
 
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('js/app.js?v=3')}}"></script>
+    <script>
+        function add() {}
+    </script>
 </body>
 </html>

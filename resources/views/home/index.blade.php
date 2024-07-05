@@ -7,7 +7,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="carousel-fundo"></div>
-        <img src="{{ asset('img/1.jpeg') }}" class="d-block w-100" alt="...">
+        <img style="object-position: center;" src="{{ asset('img/termos.jpg') }}" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
         <div class="carousel-fundo"></div>
