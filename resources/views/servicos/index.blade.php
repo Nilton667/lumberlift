@@ -2,6 +2,7 @@
 
 @section('title', 'Serviços')
 @section('description', '')
+@section('keywords', '')
 
 @section('content')
 <style>
