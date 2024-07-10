@@ -3,6 +3,11 @@
 @section('title', 'Lumberlift')
 
 @section('content')
+<style>
+    h2{
+        color: #0054A6;
+    }
+</style>
 <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -46,6 +51,62 @@
             reciclado e cuja prática profissional se apoia nas mais
             actualizadas tecnologias e metodologias de trabalho.
         </p>
+    </div>
+</div>
+<div class="compromisso">
+    <div class="row p-0 m-0">
+        <div class="col-12 col-md-6 p-5">
+            <h2 style="color: #fff!important;">PORQUE NOS ESCOLHER?</h2>
+            <br>
+            <ul>
+                <li class="lead">
+                    Somos
+                    uma empresa multi sectorial. Idealizada, criada e gerida por
+                    jovens angolanos desejosos para apresentar de forma global com
+                    novos pensamentos e trabalhar de acordo com a evolução
+                    tecnológica e a demanda por uma maior acurácia, eficácia e
+                    menores custos para exe cutar um dado projecto ou tarefa.
+                </li>
+                <br>
+                <li class="lead">
+                    Fazemos a integração de várias ciências, engenharias e tecnologias
+                    para apresentar soluções locais para industria de equipamentos de
+                    elevacao (Lifting Equipment Industry), Preservação do Ambiente e
+                    Património Histórico/Cultural, Agricultura, Petróleo e Gás,
+                    fornecendo Servicos e técnicas para manter os equipamento,
+                    instalações, estruturas e infra estruturas de forma segura e
+                    eficiente.
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-6 p-5">
+            <h2 style="color: #fff!important;">Compromisso com o Cliente</h2>
+            <br>
+            <ul>
+                <li class="lead">
+                    A
+                    nossa reputação é um património inestimável para atrair e
+                    manter clientes. Nós ganhamos essa repu tação e trabalha
+                    mos para mantê la a partir da atitude mos trada antes,
+                    durante e após a prestação dos nossos serviços aos nossos
+                    clientes.
+                </li>
+                <br>
+                <li class="lead">
+                    Os nossos funcionários devem sempre apresentar uma
+                    atitude profissional, útil e amigável, ser cortês e educado
+                    durante a execução e produzir um trabalho limpo e preciso,
+                    que ofereça soluções para os nossos clientes.
+                </li>
+                <br>
+                <li class="lead">
+                    O nosso compromisso com um serviço de alta qualidade
+                    mantém os clientes voltados para a LUMBERLIFT ano após
+                    ano.
+                </li>
+            </ul>
+        </div>
+    </div>
     </div>
 </div>
 <div class="offset-image">

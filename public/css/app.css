@@ -18,6 +18,10 @@
     .nav-link.active{
         color: #0054A6!important;
     }
+    .compromisso{
+        background-color: #0054A6;
+        color: #fff!important;
+    }
     #carouselAutoplaying{
         height: calc(100vh / 1.5);
     }
