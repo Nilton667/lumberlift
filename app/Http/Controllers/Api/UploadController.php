@@ -15,9 +15,8 @@ class UploadController
 
             if ($request->file('file')->isValid()) {
                 $filePath = $request->file('file')
-                ->storeAs(
+                ->store(
                     'uploads',
-                    $request->name,
                     'public'
                 );
                 return response()->json([
